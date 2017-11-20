@@ -1,5 +1,25 @@
-.test h1 {
-  display: none;
-  background: blue;
-  margin: 10px;
-  padding-left: 20px; }
+.c-header {
+  text-align: center;
+  background: #332F2E;
+  border-bottom: 4px solid #000;
+  font-size: 22px; }
+  .c-header ul {
+    list-style: none; }
+    .c-header ul li {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      font-style: italic; }
+      .c-header ul li a {
+        color: #FFEDE5;
+        text-decoration: none; }
+        .c-header ul li a:hover {
+          color: #b9b9b9; }
+      .c-header ul li img {
+        border-radius: 50%; }
+
+@media all and (max-width: 578px) {
+  .c-header ul {
+    padding: 0; }
+    .c-header ul li {
+      display: block; } }
