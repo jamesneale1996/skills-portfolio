@@ -1,14 +1,39 @@
+/*
+*   OBJECTS
+*/
+.o-grid.t--about, .o-grid.t--skillset, .o-grid.t--work, .o-grid.t--contact {
+  padding: 2rem 1rem; }
+
+.o-grid.t--about {
+  background-color: #9ec2e4; }
+
+.o-grid.t--skillset {
+  background: green; }
+
+.o-grid.t--work {
+  background: yellow; }
+
+.o-grid.t--contact {
+  background: grey; }
+
+.o-image.o-image--circle {
+  border-radius: 50%; }
+
+/*
+*   COMPONENTS
+*/
 .c-header {
   text-align: center;
   background: #332F2E;
   border-bottom: 4px solid #000;
-  font-size: 22px; }
+  font-size: 24px; }
   .c-header ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
     .c-header ul li {
       display: inline-block;
       text-decoration: none;
-      padding: 10px;
+      padding: 15px;
       font-style: italic; }
       .c-header ul li a {
         color: #FFEDE5;
@@ -18,8 +43,84 @@
       .c-header ul li img {
         border-radius: 50%; }
 
-@media all and (max-width: 578px) {
-  .c-header ul {
-    padding: 0; }
-    .c-header ul li {
-      display: block; } }
+@media all and (max-width: 591px) {
+  .c-header ul li {
+    display: block; } }
+
+/*
+*   ELEMENTS
+*/
+.e-unordered-list--social li {
+  line-height: 40px;
+  vertical-align: middle; }
+
+/*
+*   UTILITIES
+*/
+.u-margin-top--none {
+  margin-top: 0; }
+
+.u-margin-right--small {
+  margin-right: 1rem; }
+
+.u-margin-right--medium {
+  margin-right: 2rem; }
+
+.u-margin-right--none {
+  margin-right: 0; }
+
+.u-margin-bottom--none {
+  margin-bottom: 0; }
+
+.u-margin-left--none {
+  margin-left: 0; }
+
+.u-padding-top--small {
+  padding-top: 1rem; }
+
+.u-padding-top--medium {
+  padding-top: 2rem; }
+
+.u-padding-top--none {
+  padding-top: 0; }
+
+.u-padding-right--small {
+  padding-right: 1rem; }
+
+.u-padding-right--medium {
+  padding-right: 2rem; }
+
+.u-padding-right--none {
+  padding-right: 0; }
+
+.u-padding-bottom--small {
+  padding-bottom: 1rem; }
+
+.u-padding-bottom--medium {
+  padding-bottom: 2rem; }
+
+.u-padding-bottom--none {
+  padding-bottom: 0; }
+
+.u-padding-left--small {
+  padding-left: 1rem; }
+
+.u-padding-left--medium {
+  padding-left: 2rem; }
+
+.u-padding-left--none {
+  padding-left: 0; }
+
+.u-float--left {
+  float: left; }
+
+.u-float--right {
+  float: right; }
+
+.u-float--none {
+  float: none; }
+
+.u-link {
+  color: #000; }
+  .u-link:hover {
+    text-decoration: none; }

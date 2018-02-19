@@ -1,16 +1,53 @@
+/*
+*   OBJECTS
+*/
+.o-grid {
+    &.t--about,
+    &.t--skillset,
+    &.t--work,
+    &.t--contact {
+        padding: 2rem 1rem;
+    }
+
+    &.t--about {
+        background-color: #9ec2e4;
+    }
+
+    &.t--skillset {
+        background: green;
+    }
+
+    &.t--work {
+        background: yellow;
+    }
+
+    &.t--contact {
+        background: grey;
+    }
+}
+
+.o-image {
+    &.o-image--circle {
+        border-radius: 50%;
+    }
+}
+
+/*
+*   COMPONENTS
+*/
 .c-header {
     text-align: center;
     background: #332F2E;
     border-bottom: 4px solid #000;
-    font-size: 22px;
+    font-size: 24px;
 
     ul {
         list-style: none;
-
+        padding: 0;
         li {
             display: inline-block;
             text-decoration: none;
-            padding: 10px;
+            padding: 15px;
             font-style: italic;
 
             a {
@@ -30,14 +67,139 @@
     }
 }
 
-@media all and (max-width:578px) {
+@media all and (max-width:591px) {
     .c-header {
         ul {
-            padding: 0;
-
             li {
                 display: block;
             }
         }
+    }
+}
+
+/*
+*   ELEMENTS
+*/
+.e-unordered-list--social {
+    li {
+        line-height: 40px;
+        vertical-align: middle;
+    }
+}
+
+/*
+*   UTILITIES
+*/
+
+//Spacing
+.u-margin-top {
+    &--none {
+        margin-top: 0;
+    }
+}
+
+.u-margin-right {
+    &--small {
+        margin-right: 1rem;
+    }
+
+    &--medium {
+        margin-right: 2rem;
+    }
+
+    &--none {
+        margin-right: 0;
+    }
+}
+
+.u-margin-bottom {
+    &--none {
+        margin-bottom: 0;
+    }
+}
+
+.u-margin-left {
+    &--none {
+        margin-left: 0;
+    }
+}
+
+.u-padding-top {
+    &--small {
+        padding-top: 1rem;
+    }
+
+    &--medium {
+        padding-top: 2rem;
+    }
+
+    &--none {
+        padding-top: 0;
+    }
+}
+
+.u-padding-right {
+    &--small {
+        padding-right: 1rem;
+    }
+
+    &--medium {
+        padding-right: 2rem;
+    }
+
+    &--none {
+        padding-right: 0;
+    }
+}
+
+.u-padding-bottom {
+    &--small {
+        padding-bottom: 1rem;
+    }
+
+    &--medium {
+        padding-bottom: 2rem;
+    }
+
+    &--none {
+        padding-bottom: 0;
+    }
+}
+
+.u-padding-left {
+    &--small {
+        padding-left: 1rem;
+    }
+
+    &--medium {
+        padding-left: 2rem;
+    }
+
+    &--none {
+        padding-left: 0;
+    }
+}
+
+// display and positioning
+.u-float {
+    &--left {
+        float: left;
+    }
+
+    &--right {
+        float: right;
+    }
+
+    &--none {
+        float: none;
+    }
+}
+
+//Links
+.u-link {
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
     }
 }
