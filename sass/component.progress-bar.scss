@@ -1,0 +1,33 @@
+.c-progress-bar {
+    padding: 10px 0;
+
+    &:hover {
+        opacity: 0.8;
+        curser: pointer;
+    }
+
+    .c-progress-bar__label {
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    &__highlighted {
+        &--blue {
+            background-color: #4600FF;
+        }
+
+        &--purple {
+            background-color: #8B00FF;
+        }
+
+        &--orange {
+            background-color: #FF8700;
+        }
+
+        &--pink {
+            background-color: #FF007F;
+        }
+
+    }
+}

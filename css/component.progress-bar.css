@@ -1,0 +1,17 @@
+.c-progress-bar {
+  padding: 10px 0; }
+  .c-progress-bar:hover {
+    opacity: 0.8;
+    curser: pointer; }
+  .c-progress-bar .c-progress-bar__label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px; }
+  .c-progress-bar__highlighted--blue {
+    background-color: #4600FF; }
+  .c-progress-bar__highlighted--purple {
+    background-color: #8B00FF; }
+  .c-progress-bar__highlighted--orange {
+    background-color: #FF8700; }
+  .c-progress-bar__highlighted--pink {
+    background-color: #FF007F; }
